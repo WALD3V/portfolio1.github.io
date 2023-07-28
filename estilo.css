@@ -513,6 +513,7 @@ html{
 }
 .portfolio .galeria .proyecto img{
     width: 100%;
+    
     display: block;
 }
 .portfolio .galeria .proyecto .overlay{
