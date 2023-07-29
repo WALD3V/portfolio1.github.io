@@ -19,11 +19,11 @@
                 <ul>
                     
                     
-                    <li><a href="#prueba" onclick="seleccionar()">prueba</a></li>
+                    
                     <li><a href="#pareja" onclick="seleccionar()">PAREJAS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">MENS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">KIDS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">MASCOTAS</a></li>
+                    <li><a href="#mens" onclick="seleccionar()">MENS</a></li>
+                    <li><a href="#kids" onclick="seleccionar()">KIDS</a></li>
+                    <li><a href="#mascotas" onclick="seleccionar()">MASCOTAS</a></li>
 
                     <li><a href="#inicio" onclick="seleccionar()">ABOUT</a></li>
                     
@@ -37,55 +37,15 @@
     </div>
 
    
-    <section id="portfolio" class="portfolio">
+
+    <section id="pareja" class="pareja">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="parejas2/_DSC1963.JPG" alt="">
-                    <div class="overlay">
-                        <h3>Parejass </h3>
-                        
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="mens/DSC_0044.jpg" alt="">
-                    <div class="overlay">
-                        
-                        
-                    </div>
-                </div>
-                
-                <div class="proyecto">
-                    <img src="kids/_DSC1704 (1).JPG" alt="">
-                    <div class="overlay">
-                        <h3>Kids</h3>
-                        
-                    </div>
-                </div>
-
-                <div class="proyecto">
-                    <img src="comp/comp/DSC01101.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Mascotas</h3>
-                        
-                    </div>
-                </div>
-                
-               
-            </div>
-        </div>
-    </section>
-
-
-    <section id="prueba" class="prueba">
-        <div class="contenido-seccion">
-            <h2>PRUEBAS</h2>
+            <h2>parejas</h2>
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Albañil de Fotos</title>
-                <link rel="stylesheet" href="styles.css">
+                <link rel="stylesheet" href="estilo.css">
               </head>
               <body>
                 <div class="grid-container" id="gallery"></div>
@@ -93,9 +53,84 @@
                   <span class="close-btn" onclick="closeOverlay()">&times;</span>
                   <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
                   <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
-                  <img id="overlay-img" class="overlay-img">
+                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
                 </div>
-                <script src="script.js"></script>
+                <script src="parejas.js"></script>
+              </body>
+
+
+
+        </div>
+
+    </section>
+    <section id="mens" class="mens">
+        <div class="contenido-seccion">
+            <h2>Mens</h2>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Albañil de Fotos</title>
+                <link rel="stylesheet" href="estilo.css">
+              </head>
+              <body>
+                <div class="grid-container" id="gallery"></div>
+                <div id="overlay" class="overlay">
+                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
+                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
+                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
+                </div>
+                <script src="mens.js"></script>
+              </body>
+
+
+
+        </div>
+
+    </section>
+    <section id="kids" class="kids">
+        <div class="contenido-seccion">
+            <h2>Kids</h2>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Albañil de Fotos</title>
+                <link rel="stylesheet" href="estilo.css">
+              </head>
+              <body>
+                <div class="grid-container" id="gallery"></div>
+                <div id="overlay" class="overlay">
+                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
+                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
+                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
+                </div>
+                <script src="kids.js"></script>
+              </body>
+
+
+
+        </div>
+
+    </section>
+    <section id="mascotas" class="mascotas">
+        <div class="contenido-seccion">
+            <h2>Mascotas</h2>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Albañil de Fotos</title>
+                <link rel="stylesheet" href="estilo.css">
+              </head>
+              <body>
+                <div class="grid-container" id="gallery"></div>
+                <div id="overlay" class="overlay">
+                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
+                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
+                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
+                </div>
+                <script src="mascotas.js"></script>
               </body>
 
 
@@ -104,46 +139,7 @@
 
     </section>
 
-    <section id="pareja" class="pareja">
-        <div class="contenido-seccion">
-            <h2>PAREJAS</h2>
-            <div class="galeria1">
-                <div class="proyecto1">
-                    <img src="parejas2/_DSC1964.JPG" alt="">
-                    <div class="overlay">
-                       
-                        
-                    </div>
-                </div>
-                <div class="proyecto1">
-                    <img src="parejas2/_DSC1963.JPG" alt="">
-                    <div class="overlay">
-                        
-                        
-                    </div>
-                </div>
-                
-                <div class="proyecto1">
-                    <img src="parejas2/_DSC1978.JPG" alt="">
-                    <div class="overlay">
-                        
-                        
-                    </div>
-                </div>
-
-                <div class="proyecto1">
-                    <img src="parejas2/_DSC1980.JPG" alt="">
-                    <div class="overlay">
-                        
-                        
-                    </div>
-                </div>
-                
-               
-            </div>
-        </div>
-
-    </section>
+    
 
 
 

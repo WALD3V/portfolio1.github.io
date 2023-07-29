@@ -1,72 +1,92 @@
-.prueba .body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .prueba .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .prueba .grid-item {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-  }
-  
-  /* Overlay styles */
-  .prueba .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.prueba .9);
-  }
-  
-  .prueba .overlay-img {
-    max-height: 90vh;
-    max-width: 90vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .prueba .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .prueba .nav-btn {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: opacity 0.prueba .3s;
-  }
-  
-  .prueba .prev-btn {
-    left: 30px;
-  }
-  
-  .prueba .next-btn {
-    right: 30px;
-  }
-  
-  .prueba .nav-btn:hover {
-    opacity: 0.prueba .8;
-  }
-  
+
+.pareja{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.pareja .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.pareja h2{
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+.pareja .body {
+  margin: 0;
+  padding: 0;
+}
+
+.pareja .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.pareja .grid-item {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Overlay styles */
+.pareja .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.pareja .9);
+}
+
+.pareja .overlay-img {
+  max-height: 90vh;
+  max-width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pareja .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.pareja .nav-btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: opacity 0.pareja .3s;
+}
+
+.pareja .prev-btn {
+  left: 30px;
+}
+
+.pareja .next-btn {
+  right: 30px;
+}
+
+.pareja .nav-btn:hover {
+  opacity: 0.pareja .8;
+}
+
