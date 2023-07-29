@@ -10,8 +10,8 @@ window.addEventListener('load', () => {
     // Array of image file names (you may fetch this dynamically if needed)
     const imageFiles = [
         'DSC1962.JPG',
-        '_DSC1979.JPG',
-        '_DSC2067.JPG',
+        'DSC1979.JPG',
+        'DSC2067.JPG',
         // Add more image file names here...
     ];
 
