@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
         'DSC_0042.jpg',
         'DSC_0044.jpg',
         'DSC_0050_1.jpg',
-        'DSC_0051_1.jpg',
         'DSC_0051.jpg',
 
         // Add more image file names here...
