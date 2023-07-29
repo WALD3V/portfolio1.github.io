@@ -6,13 +6,13 @@ window.addEventListener('load', () => {
     let currentIndex = 0;
   
     // Replace 'your_image_folder' with the path to your image folder
-    const imageFolderPath = '';
+    const imageFolderPath = 'parejas/';
   
     // Array of image file names (you may fetch this dynamically if needed)
     const imageFiles = [
-      'DSC1962.JPG',
-      'DSC1979.JPG',
-      'DSC2067.JPG',
+      '_DSC1962.JPG',
+      '_DSC1979.JPG',
+      '_DSC2067.JPG',
       // Add more image file names here...
     ];
   
