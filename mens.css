@@ -1,22 +1,20 @@
-
-.mens{
+.mens {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
   }
   
-  .mens .contenido-seccion{
+  .mens .contenido-seccion {
     max-width: 1100px;
     margin: auto;
   }
-  .mens h2{
+  
+  .mens h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
   }
-  
-  
   
   .mens .body {
     margin: 0;
@@ -30,10 +28,28 @@
     padding: 10px;
   }
   
-  .mens .grid-item {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
+  @media (min-width: 768px) {
+    .mens .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* ... Código anterior ... */
+
+/* Efecto de zoom */
+.mens .grid-item {
+    overflow: hidden;
+  }
+  
+  .mens .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .mens .grid-item:hover img {
+    transform: scale(1.1);
   }
   
   /* Overlay styles */
@@ -44,7 +60,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.mens .9);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999; /* Asegura que el overlay esté encima de todo */
   }
   
   .mens .overlay-img {
@@ -53,8 +70,16 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1); /* Aplica el zoom */
+    transition: transform 0.3s;
   }
+  
+  .mens .overlay-img:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Efecto de zoom en el overlay */
+  }
+  
+  /* ... Código posterior ... */
+  
   
   .mens .close-btn {
     position: absolute;
@@ -75,7 +100,7 @@
     text-align: center;
     line-height: 50px;
     cursor: pointer;
-    transition: opacity 0.mens .3s;
+    transition: opacity 0.3s;
   }
   
   .mens .prev-btn {
@@ -87,7 +112,6 @@
   }
   
   .mens .nav-btn:hover {
-    opacity: 0.mens .8;
+    opacity: 0.8;
   }
-  
   

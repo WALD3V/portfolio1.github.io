@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden; /* Para ocultar la parte que excede el recuadro */
+  position: relative;
+}
+
+/* Cambios para mostrar 3 imágenes por fila */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Efecto de zoom */
+.grid-item img {
+  transition: transform 0.3s;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}

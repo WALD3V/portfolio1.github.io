@@ -1,93 +1,116 @@
+.pareja {
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
 
-.kids{
-    background-color: #252A2E;
-    color: #fff;
-    padding: 50px 20px;
+.pareja .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.pareja h2 {
+  font-size: 48px;
+  font-family: 'Righteous';
+  text-align: center;
+  padding: 20px 0;
+}
+
+.pareja .body {
+  margin: 0;
+  padding: 0;
+}
+
+.pareja .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .pareja .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .kids .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-  }
-  .kids h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  
-  
-  .kids .body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .kids .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-  }
-  
-  .kids .grid-item {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-  }
-  
-  /* Overlay styles */
-  .kids .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.kids .9);
-  }
-  
-  .kids .overlay-img {
-    max-height: 90vh;
-    max-width: 90vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .kids .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .kids .nav-btn {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    transition: opacity 0.kids .3s;
-  }
-  
-  .kids .prev-btn {
-    left: 30px;
-  }
-  
-  .kids .next-btn {
-    right: 30px;
-  }
-  
-  .kids .nav-btn:hover {
-    opacity: 0.kids .8;
-  }
-  
-  
+}
+
+/* ... Código anterior ... */
+
+/* Efecto de zoom */
+.pareja .grid-item {
+  overflow: hidden;
+}
+
+.pareja .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.pareja .grid-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay styles */
+.pareja .overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999; /* Asegura que el overlay esté encima de todo */
+}
+
+.pareja .overlay-img {
+  max-height: 90vh;
+  max-width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1); /* Aplica el zoom */
+  transition: transform 0.3s;
+}
+
+.pareja .overlay-img:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* Efecto de zoom en el overlay */
+}
+
+/* ... Código posterior ... */
+
+
+.pareja .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.pareja .nav-btn {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.pareja .prev-btn {
+  left: 30px;
+}
+
+.pareja .next-btn {
+  right: 30px;
+}
+
+.pareja .nav-btn:hover {
+  opacity: 0.8;
+}

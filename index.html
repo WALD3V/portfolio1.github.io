@@ -21,9 +21,9 @@
                     
                     
                     <li><a href="#pareja" onclick="seleccionar()">PAREJAS</a></li>
-                    <li><a href="#mens" onclick="seleccionar()">MENS</a></li>
-                    <li><a href="#kids" onclick="seleccionar()">KIDS</a></li>
-                    <li><a href="#mascotas" onclick="seleccionar()">MASCOTAS</a></li>
+                    <li><a href="mens.html" onclick="seleccionar()">MENS</a></li>
+                    <li><a href="kids.html" onclick="seleccionar()">KIDS</a></li>
+                    <li><a href="mascotas.html" onclick="seleccionar()">MASCOTAS</a></li>
 
                     <li><a href="#inicio" onclick="seleccionar()">ABOUT</a></li>
                     
@@ -45,16 +45,19 @@
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Albañil de Fotos</title>
-                <link rel="stylesheet" href="estilo.css">
+                <link rel="stylesheet" href="pareja.css">
               </head>
               <body>
                 <div class="grid-container" id="gallery"></div>
+                
+                <!-- Visualizador (overlay) aquí -->
                 <div id="overlay" class="overlay">
                   <span class="close-btn" onclick="closeOverlay()">&times;</span>
                   <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
                   <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
                   <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
                 </div>
+              
                 <script src="parejas.js"></script>
               </body>
 
@@ -63,81 +66,10 @@
         </div>
 
     </section>
-    <section id="mens" class="mens">
-        <div class="contenido-seccion">
-            <h2>Mens</h2>
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Albañil de Fotos</title>
-                <link rel="stylesheet" href="mens.css">
-              </head>
-              <body>
-                <div class="grid-container" id="gallery"></div>
-                <div id="overlay" class="overlay">
-                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
-                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
-                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
-                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
-                </div>
-                <script src="mens.js"></script>
-              </body>
 
 
-
-        </div>
-
-    </section>
-    <section id="kids" class="kids">
-        <div class="contenido-seccion">
-            <h2>Kids</h2>
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Albañil de Fotos</title>
-                <link rel="stylesheet" href="kids.css">
-              </head>
-              <body>
-                <div class="grid-container" id="gallery"></div>
-                <div id="overlay" class="overlay">
-                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
-                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
-                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
-                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
-                </div>
-                <script src="kids.js"></script>
-              </body>
-
-
-
-        </div>
-
-    </section>
-    <section id="mascotas" class="mascotas">
-        <div class="contenido-seccion">
-            <h2>Mascotas</h2>
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Albañil de Fotos</title>
-                <link rel="stylesheet" href="mascotas.css">
-              </head>
-              <body>
-                <div class="grid-container" id="gallery"></div>
-                <div id="overlay" class="overlay">
-                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
-                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
-                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
-                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
-                </div>
-                <script src="mascotas.js"></script>
-              </body>
-
-
-
-        </div>
-
-    </section>
+   
+    
 
     
 
@@ -151,7 +83,7 @@
             <h1>WALTER VILLAMAR</h1>
             <h2>FOTOGRAFO</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#abou"><i class="fa-solid fa-angles-dow"></i></a>
                 
             </div>
         </div>

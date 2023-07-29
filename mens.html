@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Waldad</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    
+                    
+                    
+                    <li><a href="index.html" onclick="seleccionar()">PAREJAS</a></li>
+                    <li><a href="mens.html" onclick="seleccionar()">MENS</a></li>
+                    <li><a href="kids.html" onclick="seleccionar()">KIDS</a></li>
+                    <li><a href="mascotas.html" onclick="seleccionar()">MASCOTAS</a></li>
+
+                    <li><a href="#inicio" onclick="seleccionar()">ABOUT</a></li>
+                    
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+   
+
+    <section id="pareja" class="pareja">
+        <div class="contenido-seccion">
+            <h2>parejas</h2>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Albañil de Fotos</title>
+                <link rel="stylesheet" href="pareja.css">
+              </head>
+              <body>
+                <div class="grid-container" id="gallery"></div>
+                
+                <!-- Visualizador (overlay) aquí -->
+                <div id="overlay" class="overlay">
+                  <span class="close-btn" onclick="closeOverlay()">&times;</span>
+                  <div class="nav-btn prev-btn" onclick="showPrevImage()">&#10094;</div>
+                  <div class="nav-btn next-btn" onclick="showNextImage()">&#10095;</div>
+                  <img id="overlay-img" class="overlay-img" onclick="showNextImage()">
+                </div>
+              
+                <script src="mens.js"></script>
+              </body>
+
+
+
+        </div>
+
+    </section>
+
+
+   
+    
+
+    
+
+
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/IMG_20200711_212131.jpg" alt="">
+            </div>
+            <h1>WALTER VILLAMAR</h1>
+            <h2>FOTOGRAFO</h2>
+            <div class="redes">
+                <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">      
+        <div class="contenido-seccion">
+            <h2>ABOUT</h2>
+            <p><span>Hola, soy Walter Villamar.</span> soy un apasionado del arte de capturar la realidad en un plano para inmortalizarlo es de mis grandes pasiones por eso exploro cada una de sus facetas y poco a poco voy explorando cada una de ellas. .</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                    
+                        <li>
+                            <strong>Teléfono</strong>
+                            0997142159
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            walter.villamarr@ug.edu.ec
+                        </li>
+                        
+                        <li>
+                            <strong>Dirección</strong>
+                            Duran, via Duran-boliche
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        
+        <div class="contenido-seccion">
+
+
+            
+            <h2>CONTACTO</h2>
+
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/R.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Duran-Cdla El Dorado
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telf-whatsapp: 0997142159
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: walter.villamarr@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/_.waldad/"><i class="fa-brands fa-instagram"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
