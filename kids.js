@@ -7,19 +7,22 @@ window.addEventListener('load', () => {
     // Replace 'your_image_folder' with the path to your image folder
     const imageFolderPath = 'kids/';
 
-    // Array of image file names (you may fetch this dynamically if needed)
-    const imageFiles = [
-        'DSC1702 (1).jpg',
-        'DSC1704 (1).jpg',
-        'DSC1709 (1).jpg',
-        'DSC1710 (1).jpg',
-        'DSC1711 (1).jpg',
-        'DSC1712 (1).jpg',
-        'DSC1713 (1).jpg',
-        'DSC1714 (1).jpg',
-
-        // Add more image file names here...
-    ];
+    // Dynamically fetch all image files from the folder
+    const imageFiles = [];
+    fetch(imageFolderPath)
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const htmlDocument = parser.parseFromString(data, 'text/html');
+            const links = htmlDocument.querySelectorAll('a');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href.match(/\.(webp|jpg|jpeg|png|gif)$/i)) {
+                    imageFiles.push(href);
+                }
+            });
+        })
+        .catch(error => console.error('Error fetching images:', error));
 
     // Function to open overlay and show selected image
     function openOverlay(index) {
