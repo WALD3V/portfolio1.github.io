@@ -5,21 +5,23 @@ window.addEventListener('load', () => {
     let currentIndex = 0;
 
     // Replace 'your_image_folder' with the path to your image folder
-    const imageFolderPath = 'kids/';
+    const imageFolderPath = 'maternity/';
 
     // Array of image file names (you may fetch this dynamically if needed)
     const imageFiles = [
-        'IMG_0634.webp',
-        'IMG_0638.webp',
-        'IMG_0639.webp',
-        'IMG_0640.webp',
-        'IMG_0641.webp',
-        'IMG_0643.webp',
-        'IMG_0645.webp',
-        'IMG_0647.webp',
-        'IMG_0648.webp',
-        'IMG_0653.webp',
-        'IMG_0655.webp'
+        'IMG_6056.webp',
+        'IMG_6057.webp',
+        'IMG_6058.webp',
+        'IMG_6059.webp',
+        'IMG_6060.webp',
+        'IMG_6061.webp',
+        'IMG_6062.webp',
+        'IMG_6063.webp',
+        'IMG_6064.webp',
+        'IMG_6065.webp',
+        'IMG_6066.webp',
+        'IMG_6079.webp'
+        
         // Add more image file names here...
     ];
 
